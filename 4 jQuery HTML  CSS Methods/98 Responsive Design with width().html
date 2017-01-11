@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$(window).on("resize",function()
+			{
+				if($(this).width() < 800)
+				{
+					$("body").css("background-color","yellow");
+				}
+				else
+				{
+					$("body").css("background-color","pink");
+				}
+				
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+<p>Resize the window to change background-color (make the screen's width smaller and larger).</p>
+
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").addClass(function(n)
+				{
+
+					return "par_"+ n;
+				});
+			});
+		});
+	</script>
+	<style>
+	.par_0 {
+	    color: blue;
+	}
+	.par_1 {
+	    color: red;
+	}
+	.par_2 {
+	    color: orange;
+	}
+	</style>
+</head>
+<body>
+
+	<h1>This is a heading</h1>
+
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<p>This is another paragraph.</p>
+
+	<button>Add classes to p elements</button>
+</body>
+</html>

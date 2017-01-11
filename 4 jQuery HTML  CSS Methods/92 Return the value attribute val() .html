@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				alert($("input:first").val());
+
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+Firstname: <input type="text" name="fname" value="Peter"><br>
+Lastname: <input type="text" name="lname" value="Griffin"><br><br>
+
+<button>Return the value of the first input field</button>
+
+
+</body>
+</html>
+

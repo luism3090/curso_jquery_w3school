@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$("#btn1").on("click",function()
+			{
+				$("div").animate({"height":"+=100px"});
+			});
+			
+
+			$("#btn2").on("click",function()
+			{
+				$("div").animate({"height":"-=100px"});
+			});
+
+
+		});
+	</script>
+	
+</head>
+<body>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
+</body>
+</html>
+

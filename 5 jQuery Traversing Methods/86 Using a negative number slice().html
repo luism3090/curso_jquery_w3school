@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+       	
+      		$("p").slice(-3).css("background","yellow");
+       
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<p>My name is Donald (index 0).</p>
+<p>Donald Duck (index 1).</p>
+<p>I live in Duckburg (index 2).</p>
+<p>My best friend is Mickey (index 3).</p>
+<p>And I'm in love with Daisy (index 4).</p>
+
+<div>We use a negative number (-3), which selects the three last p elements. This will start the selection of p elements from the p element with index position 2 (the 3rd element from the end).</div>
+
+
+</body>
+
+</html>
+

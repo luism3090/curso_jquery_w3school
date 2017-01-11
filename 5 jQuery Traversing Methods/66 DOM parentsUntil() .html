@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+
+<style>
+.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+
+</style>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+        var Dom = document.getElementsByClassName("greatgp");
+
+        $("span.child").parentsUntil(Dom).css({"color":"red","border":"1px solid red"});
+     
+		});
+
+	</script>
+
+
+</head>
+
+<body class="ancestors"> body (great-great-grandparent)
+  <div style="width:500px;" class="greatgp">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span class="child">span</span>
+      </li>
+    </ul>   
+  </div>
+</body>
+
+<!-- In this example, we use the DOM to select all ancestor elements between the span element with class name "child", and the div element with class name "ancestors". -->
+
+</html>
+

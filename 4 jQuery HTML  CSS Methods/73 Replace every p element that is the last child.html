@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+
+				$("<strong>Hola mundo</strong>").replaceAll("div p:last-child");
+	
+			});
+			
+		});
+
+	</script>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+<body>
+
+<button>Replace every p element that is the last child of its parent, with a bold span element</button><br><br>
+
+<div style="border:1px solid">
+  <p>The first paragraph in div.</p>
+  <p>The last paragraph in the div.</p>
+</div><br>
+
+<div style="border:1px solid">
+  <p>The first paragraph in another div.</p>
+  <p>The last paragraph in another div.</p>
+
+</body>
+</html>
+

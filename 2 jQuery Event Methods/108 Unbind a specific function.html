@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+
+$(document).ready(function()
+{
+	function mensaje()
+	{
+		alert("mensaje");
+	}
+
+	$("p").on("click",mensaje);
+
+	$("button").on("click",function()
+	{
+		$("p").unbind("click",mensaje);
+	});
+
+});
+
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to trigger an alert box.</p>
+
+<button>Remove the alert box function from the click event for the p elements</button>
+
+
+</body>
+</html>

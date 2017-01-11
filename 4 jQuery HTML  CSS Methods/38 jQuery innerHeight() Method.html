@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				alert("inner height of div: "+$("div").innerHeight());
+			});
+
+		});
+
+	</script>
+	
+</head>
+<body>
+
+
+<div style="height:100px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div><br>
+
+<button>Display the inner height of div</button>
+<p>innerHeight() - returns the inner height of an element (includes padding).</p>
+
+</body>
+</html>
+

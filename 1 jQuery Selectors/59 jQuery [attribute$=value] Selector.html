@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js" ></script>
+	<script type="text/javascript">
+		
+		$(document).on("ready",function()
+		{
+			
+			$("a[href$='org']").css("background","pink");
+			$("div[data-MiAtributo$=to]").css("background","yellow");
+			$("img[src$=jpg]").css("border","5px solid green");
+
+		});
+
+	</script>
+</head>
+<body>
+	
+	<a href="http://www.w3schools.com">w3schools.com</a><br>
+	<a href="http://www.google.com">Google.com</a><br>
+	<a href="http://www.wikipedia.org">wikipedia.org</a>
+	
+	<br><br>
+	<div data-MiAtributo='mi-dato'>This is a div element</div>
+	<div>This is a div element</div>
+	<div>This is a div element</div>
+	<br><br>
+	<img src="imagenes/joven1.jpg" />
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js" ></script>
+	<script type="text/javascript">
+		
+		$(document).on("ready",function()
+		{
+			$("[data-id]").css("background","yellow");
+			$("[id]").css("background","red");
+			$("[class]").css("background","pink");
+
+		});
+
+	</script>
+</head>
+<body>
+	
+	<h1>Welcome to My Homepage</h1>
+
+	<p class="intro">My name is Donald.</p>
+	<p>I live in Duckburg.</p>
+	<p>I live in Duckburg.</p>
+	<p data-id="2" >My best friend is Mickey.</p>
+	<p>I live in Duckburg.</p>
+
+
+	<p>Who is your favourite:</p>
+	<ul>
+	  <li id="li1">Goofy</li>
+	  <li id="li2">Mickey</li>
+	  <li class="li3">Pluto</li>
+	</ul>
+
+</body>
+</html>

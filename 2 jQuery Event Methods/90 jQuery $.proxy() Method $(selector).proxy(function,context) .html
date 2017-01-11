@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='jquery.js'> </script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+
+			//  $(selector).proxy(context,name)
+
+				var myObject = 
+				{
+					myName: "Luis",
+					showMyName: function()
+					{
+						alert("My name is : "+ this.myName);
+					}
+				}
+
+				$(".button1").on("click",function()
+				{
+					//console.log(myObject);
+					//console.log(myObject.myName);
+					
+					
+				},$.proxy(myObject,"showMyName"));
+
+				$(".button2").on("click",function()
+				{
+					//console.log(myObject);
+					//console.log(myObject.myName);
+					
+					
+				},myObject.showMyName);
+
+
+				// otro ejemplo 
+
+				var objPersona = 
+				{
+					name : 'Luis',
+					age: 50,
+					datos: function()
+					{
+						$("p").after("Name: "+ this.name + " Age:" + this.age);
+					}
+				}
+
+				$(".button3").on("click",$.proxy(objPersona, "datos"));
+				$(".button4").on("click",function()
+				{
+					objPersona.datos();
+					var dato =  $.proxy(objPersona, "datos");
+					dato();
+				});
+
+				
+		});
+	</script>
+</head>
+<body>
+
+	<button class="button1">button1</button>
+	<button class="button2">button2</button>
+	
+	<br><br>
+	<button class="button3">Run test function</button>
+	<button class="button4">Run test function</button>
+	<p></p>
+
+</body>
+</html>

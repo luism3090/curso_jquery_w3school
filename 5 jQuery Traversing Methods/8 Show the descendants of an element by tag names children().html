@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+      		 var treeTraversal = $("div").children().map(function()
+      		 {
+      		 	
+		    	return this.tagName;
+
+		    }).get().join(", ");
+
+      		 
+
+		    $("div").after("<h2>" + treeTraversal + "<h2>");
+			
+		});
+
+	</script>
+  
+</head>
+<body>
+
+
+  <div> This is a div element. My child is:  
+    <p>             
+      <span></span>    
+    </p>  
+  </div>
+</body>
+
+In this example, $("div").children will only return P, and not P + SPAN, because children() only traverse a single level down the DOM tree.
+
+
+
+</body>
+</html>
+

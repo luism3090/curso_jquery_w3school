@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			var $elemento="";
+			$("#btn1").on("click",function()
+			{
+				$elemento = $("p").detach();
+				
+			});
+
+			$("#btn2").on("click",function()
+			{
+				$("body").prepend($elemento);
+			});
+
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button id="btn1">Remove p element</button>
+<button id="btn2">Restore p element</button>
+
+
+</body>
+</html>

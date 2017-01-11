@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf8'>
+		
+		<script type="text/javascript" src='jquery.js'></script>
+
+		<script type="text/javascript">
+
+			// The :first-of-type selector selects all elements that are the first child, of a particular type, of their parent.
+			
+			$(function()
+			{
+				// Select every <p> element that is the first <p> element of its parent:
+
+				$("p:first-of-type").css("background","red");
+
+				$("span:first-of-type").css("background","yellow");
+
+				
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<p>The first paragraph in body.</p>
+
+		<div style="border:1px solid;">
+		  <p>The first paragraph in div.</p>
+		  <p>The last paragraph in div.</p>
+		</div><br>
+
+		<div style="border:1px solid;">
+		  <span>This is a span element.</span>
+		  <p>The first paragraph in another div.</p>
+		  <p>The last paragraph in another div.</p>
+		</div>
+
+		<p>The last paragraph in body.</p>
+
+	</body>
+
+</html>

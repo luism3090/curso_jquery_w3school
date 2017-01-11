@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+	<script type="text/javascript">
+
+	
+		$(document).ready(function()
+		{
+			
+			$("a").on("click",function(event)
+			{
+				event.preventDefault();
+				alert("was preventDefault() called: "+event.isDefaultPrevented());
+
+			});
+			
+		});
+
+	</script>
+</head>
+<body>
+
+<a href="http://w3schools.com/">Go to W3Schools.com</a>
+
+<p>The preventDefault() method will prevent the link above from following the URL.</p>
+<p>Click the link and check if the default action is prevented.</p>
+
+</body>
+</html>

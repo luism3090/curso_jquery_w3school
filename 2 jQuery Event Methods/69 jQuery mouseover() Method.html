@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		
+		$("p").mouseover(function()
+		{
+			$(this).css("background","pink");
+		});
+
+		$("p").mouseout(function()
+		{
+			$(this).css("background","yellow");
+		});
+
+
+		$("#btn1").click(function()
+		{
+			$("p").mouseover();
+		});
+
+		$("#btn2").click(function()
+		{
+			$("p").mouseout();
+		});
+
+	});
+</script>
+</head>
+<body>
+
+<p>Move the mouse pointer over this paragraph.</p>
+
+<button id="btn1">Trigger mouseover event</button><br>
+<button id="btn2">Trigger mouseout event</button>
+
+</body>
+</html>

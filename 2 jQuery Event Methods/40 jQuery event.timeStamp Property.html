@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			/*Display the number of milliseconds since last click event
+			Show how to use event.timeStamp to display the number of milliseconds since last click event.
+			*/
+
+			var lastms, d;
+		    $("button").click(function(event){
+
+		        if (lastms)
+		        {
+		            ms = event.timeStamp - lastms
+		            $("p:eq(0)").text("Milliseconds since last click event: " + ms);
+		            
+		            $("p:eq(1)").text("Seconds since last click event: " + ms/1000);
+
+					$("p:eq(2)").text("Minutes since last click event: " + (ms/1000)/60);		            
+		        } 
+		        else 
+		        {
+		            $("p:eq(0)").text("Click the button again.");
+		        }
+		    	lastms = event.timeStamp;
+		    });  
+
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<button>Click me</button>
+
+	<p></p>
+	<p></p>
+	<p></p>
+
+</body>
+</html>

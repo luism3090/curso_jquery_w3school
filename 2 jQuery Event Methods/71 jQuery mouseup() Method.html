@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+
+		$("button").mouseup(function()
+		{
+			$("p").slideToggle();
+		});
+
+		$("div").mouseover(function()
+		{
+			$("button").mouseup();
+		});
+	});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button>Toggle</button><br><br>
+
+<div>Mouse over this text to trigger the mouseup event for the button above.</div>
+
+</body>
+</html>

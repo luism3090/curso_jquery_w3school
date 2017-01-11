@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			$("input").on("focus",function()
+			{
+				$(this).css("background","#cccccc");
+			});
+
+			$("input").on("blur",function()
+			{
+				$(this).css("background","#fff");
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	Name: <input type="text" name="fullname"><br>
+	Email: <input type="text" name="email">
+
+</body>
+</html>

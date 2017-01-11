@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				$("div").html("<div> outerHeight() : "+$("div").outerHeight()+"</div>"+
+							  "<div> outerHeight(true): "+$("div").outerHeight(true)+"</div>");
+				
+			});
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+
+<div style="height:120px;width:300px;padding:10px;margin:3px;border:1px solid blue;background-color:lightblue;"></div><br>
+
+<button>Display outer height of div</button>
+
+<p>outerHeight() - returns the outer height of an element (includes padding and border).</p>
+<p>outerHeight(true) - returns the outer height of an element (includes padding, border and margin).</p>
+
+
+
+</body>
+</html>
+

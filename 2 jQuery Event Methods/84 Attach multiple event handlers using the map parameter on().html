@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+
+	    $("p").on({
+	    			mouseover: function()
+	    			{
+	    				$(this).css("background","pink");
+	    			},
+	    			mouseleave: function()
+	    			{
+	    				$(this).css("background","yellow");
+	    			},
+	    			click : function()
+	    			{
+	    				$(this).css("background","red");
+	    			}
+	   			 });
+
+	});
+</script>
+
+<style>
+.intro {
+    font-size: 150%;
+    color: red;
+}
+</style>
+
+</head>
+<body>
+
+<p>Click or move the mouse pointer over this paragraph.</p>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").offset(function(i,c)
+				{
+					var newPos = new Object();
+					newPos.top = c.top + 50;
+					newPos.left = c.left + 50;
+					return newPos;
+				});
+			});
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button>Set the offset coordinates of the p element</button>
+
+</body>
+</html>
+

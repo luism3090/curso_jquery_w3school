@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").offset($("span").offset());
+			});
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button>Set the offset coordinates of the p element equal to the span element</button>
+
+<span style="position:absolute;left:100px;top:150px;">This is a span</span>
+
+</body>
+</html>
+

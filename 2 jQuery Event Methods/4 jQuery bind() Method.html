@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+	
+	//Pass along data to the function
+
+		$(function()
+		{
+			
+			$("p").bind("click",{
+									dato1: $("input[type='text']").val(),
+									dato2: "mensaje" 
+								}, 
+									handlerName);
+
+			function handlerName(e)
+			{
+
+				alert(e.data.dato1);
+
+				//alert($("input[type='text']").val());
+
+				alert(e.data.dato2);
+			}
+
+
+		});
+	</script>
+
+	<style>
+		.intro 
+		{
+		    font-size: 150%;
+		    color: red;
+		}
+	</style>
+
+</head>
+
+<body>
+	
+<p>Click me!</p>
+<input type="text" value="1"/>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+
+				$("div").scrollLeft("100");
+	
+			});
+			
+		});
+
+	</script>
+
+
+</head>
+<body>
+
+<div style="border:1px solid black;width:100px;height:130px;overflow:auto">
+The longest word in the english dictionary is: pneumonoultramicroscopicsilicovolcanoconiosis.
+</div><br>
+
+<button>Set horizontal scrollbar position to 100px</button>
+
+
+</body>
+</html>
+

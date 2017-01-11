@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				$("p").wrapAll("<div></div>")
+				
+			});
+
+		});
+
+	</script>
+
+<style>
+div {
+    background-color: yellow;
+    padding: 10px;
+}
+</style>
+
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Wrap a div element around all p elements</button>
+
+
+</body>
+</html>
+

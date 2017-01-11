@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js" ></script>
+	<script type="text/javascript">
+		
+		$(document).on("ready",function()
+		{
+
+	      /*
+	        Hidden elements are elements that are:
+	        Set to display:none
+	        Form elements with type="hidden"
+	        Width and height set to 0
+	        A hidden parent element (this also hides child elements)
+	      */
+
+			$(":hidden").text("Jquery Selectors");
+      		$(":hidden").show(3500);
+
+		});	
+
+
+	</script>
+</head>
+<body>
+	
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p style="display:none;">This is a hidden paragraph.</p>
+<div style="display:none;">This is a hidden div element.</div>
+
+</body>
+</html>

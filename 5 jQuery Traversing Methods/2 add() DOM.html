@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			 $("p").add(document.getElementsByTagName("span")[0]).css("background","yellow");
+
+			//$("p").add("span:first").css("background","yellow");
+
+			//$("p,span:first").css("background","yellow");
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+<p>A p element.</p>
+<p>Another p element.</p>
+
+<span>A span element.</span>
+<span>A span element.</span><br><br>
+
+<div>This example adds the same css style for the first span element (index 0), as the existing p elements.</div>
+
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("p").on("click",function()
+		{
+			alert("The paragraph was clicked.");
+		});
+
+		$("body").on("click","p",function()
+		{
+			alert("The paragraph was clicked.");
+		});
+
+		$("body").on("click","button",function()
+		{
+			$("<p> this is a div element</p>").insertAfter("button");
+		});
+	});
+</script>
+</head>
+<body>
+
+<p>Click this paragraph.</p>
+
+<button>click</button>
+
+</body>
+</html>

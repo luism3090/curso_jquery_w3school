@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$(".btn1").on("click",function()
+			{
+				$("p").fadeIn();
+			});
+
+			$(".btn2").on("click",function()
+			{
+				$("p").fadeOut();
+			});
+	
+		});
+	</script>
+	
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button class="btn1">Fade out</button>
+<button class="btn2">Fade in</button>
+
+	   
+</div>
+
+
+
+</body>
+</html>
+

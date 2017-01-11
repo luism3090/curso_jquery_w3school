@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+
+$(document).ready(function()
+{
+	$("input").select(function()
+	{
+		$("input").after("<span> Text marked! </span>");
+	});
+
+	$("button").on("click",function()
+	{
+		$("input").select();
+	});
+
+
+});
+</script>
+</head>
+<body>
+
+
+<input type="text" value="Hello World">
+
+<p>Select some text inside the input field.</p>
+<button>Trigger the select event</button>
+
+</body>
+</html>

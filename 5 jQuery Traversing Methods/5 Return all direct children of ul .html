@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("ul").children().css({"border":"1px solid red","color":"red"});
+		});
+
+	</script>
+
+</head>
+<style type="text/css">
+	.descendants * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+
+</style>
+
+
+<body class="descendants">body (great-grandparent)
+  <div style="width:500px;">div (grandparent)
+    <ul>ul (direct parent)  
+      <li>li (child)
+        <span>span (grandchild)</span>
+      </li>
+      <li>li (child)
+        <span>span (grandchild)</span>
+      </li>
+    </ul>   
+  </div>
+
+
+</body>
+</html>
+

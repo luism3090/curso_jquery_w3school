@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+
+$(document).ready(function()
+{
+
+	$("p").click(function()
+	{
+		$("p").on("myOwnEvent",function(event,p1,p2,p3)
+		{
+			alert(p1+" "+p2+" "+p3);
+		});
+
+		$("p").trigger("myOwnEvent",["a","b","c"]);
+
+	});	
+});
+
+</script>
+</head>
+<body>
+
+<p>Click to alert additional parameters.</p>
+
+</body>
+</html>

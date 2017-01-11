@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			$("p").hover(function()
+			{
+				$(this).css("background","pink");
+
+			},function()
+			{
+				$(this).css("background","yellow");
+			});
+
+			
+		});
+
+	</script>
+</head>
+
+<body>
+
+
+<p>Hover the mouse pointer over this paragraph.</p>
+
+</body>
+</html>

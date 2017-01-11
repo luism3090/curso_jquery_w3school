@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			$("div").click(function(event)
+			{
+				event.stopImmediatePropagation();
+				alert("Primer Hola mundo");
+			});
+			$("div").click(function(event)
+			{
+				alert("Segundo Hola mundo");
+			});
+			$("div").click(function(event)
+			{
+				alert("Tercer Hola mundo");
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+<div style="height:100px;width:300px;padding:10px;border:1px solid blue;background-color:lightblue;">Click on this div element.</div>
+
+<p>The second and third click event will not be executed due to event.stopImmediatePropagation(). Try to erase this method and see what happens.
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+	// $(selector).delegate(childSelector,event,data,function)
+
+		$(document).ready(function()
+		{
+			$("div").delegate("p","click",function()
+			{
+				$(this).fadeOut();
+			});
+
+			$("button").click(function() 
+			{
+				$("div").append("<p>This is a paragraph.</p>");
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div style="background-color:yellow">
+	  <p>This is a paragraph.</p>
+	  <p>Click any p element to make it disappear. Including this one.</p>
+	  <button>Insert a new p element after this button</button>
+	</div>
+
+	<p><b>Note:</b> By using the delegate() method, instead of live(), only the p elements inside the div element will be affected.</p>
+
+</body>
+</html>

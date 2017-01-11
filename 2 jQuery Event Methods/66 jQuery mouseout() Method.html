@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("p").mouseout(function()
+		{
+			$(this).css("background","yellow");
+		});
+		
+		$("p").mouseover(function()
+		{
+			$(this).css("background","pink");
+		});
+
+	});
+</script>
+</head>
+<body>
+
+<p>Move the mouse pointer over this paragraph.</p>
+
+</body>
+</html>

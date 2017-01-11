@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		var conta=0;
+
+		function increase(event)
+		{
+			conta++;
+
+			if(conta>1)
+			{
+				$("#div1").off("click");
+				
+			}
+
+			$(this).animate({fontSize:"+=5px"});
+
+			
+			
+		}
+
+
+		$("p").on("click",increase);
+
+
+
+
+	});
+</script>
+</head>
+<body>
+
+<p id='div1'>Click this p element to increase its size. The size can only be increased 2 times.</p>
+
+</body>
+</html>

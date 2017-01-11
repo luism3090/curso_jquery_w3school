@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").offsetParent().css("background","red");
+			});
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<button>Set background-color</button>
+
+
+	<div style="border:1px solid black;width:70%;position:absolute;left:10px;top:50px">
+
+		<div style="border:1px solid black;margin:50px;background-color:yellow">
+		
+
+			<p>Click button to set the background color of the first positioned parent element of this paragraph.</p>
+
+		
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>
+

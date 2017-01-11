@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(function()
+		{
+			$("ul.test > li").css("border","1px solid red");
+
+		});
+
+	</script>
+</head>
+<body>
+	
+<ul class="test">
+  <li>List item</li>
+  <li>List item
+  <ul>
+    <li>Nested list item (will not have border)</li>
+  </ul>
+  </li>
+  <li>List item</li>
+</ul>
+
+</body>
+</html>

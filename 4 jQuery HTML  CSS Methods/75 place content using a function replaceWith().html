@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+
+				$("p").replaceWith(function(index)
+				{
+					return "<h3> the element with index: "+index+" </h3>";
+				});
+	
+			});
+			
+		});
+
+	</script>
+
+
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Replace each p element</button>
+
+</body>
+</html>
+

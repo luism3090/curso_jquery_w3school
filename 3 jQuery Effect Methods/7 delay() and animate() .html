@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				$("div").animate({"height":"+=100px"});
+				$("div").animate({"width":"+=100px"});
+				$("div").delay(2000).animate({"height":"+=100px"})
+			});
+	
+		});
+	</script>
+	
+</head>
+<body>
+
+<p>This example demonstrates the animate() method with three merged boxes.</p>
+<p>The third box is set to delay() for 1200 milliseconds.</p>
+
+<div style="background:purple;height:75px;width:75px;margin:6px;"></div>
+
+<p><button id="btn1">Animate</button></p>
+
+</body>
+</html>
+

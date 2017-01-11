@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				//$("ul li:lt(2)").removeClass("listitem");
+
+				$("ul li").removeClass(function(index,cl)
+				{
+					if(index == 0 || index == 1)
+					{
+						return "listitem";
+					}
+					else
+					{
+						return "";
+					}
+				})
+
+				
+			});
+
+			
+		});
+
+	</script>
+
+	<style type="text/css">
+.listitem {
+    color:red;
+}
+	</style>
+
+</head>
+<body>
+
+
+<h1>This is a heading</h1>
+
+<ul>
+<li class="listitem">Peter</li>
+<li class="listitem">Lois</li>
+<li class="listitem">Chris</li>
+<li class="listitem">Stewie</li>
+</ul>
+
+<button>Remove class "listitem" from the li elements with index 0 and 1</button>
+
+</body>
+</html>
+

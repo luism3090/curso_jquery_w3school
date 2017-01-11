@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+
+$(document).ready(function()
+{
+	$("p").click(function()
+	{
+
+		$("p").on("myPara",function(event,p1,p2,p3)
+		{
+			alert(p1+" "+p2+" "+p3);
+			event.stopImmediatePropagation();
+			//event.stopPropagation() 
+		});
+
+		$("p").trigger("myPara",['dato1','dato2','dato3']);
+		
+	});
+
+
+});
+
+</script>
+</head>
+<body>
+
+<p>Click to alert additional parameters.</p>
+
+</body>
+</html>

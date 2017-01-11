@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				 $("p").prepend(function(index,val)
+				 {
+				 	return " <strong>This p element has index "+index+" </strong>";
+				 });
+			});
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Insert content at the beginning of each p element</button>
+
+
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("p").click(function()
+		{
+			$(this).css("background","pink");
+		});
+
+		$("button").click(function()
+		{
+			$("p").off("click");
+		});
+		
+		
+
+
+	});
+</script>
+</head>
+<body>
+
+<p>Click this paragraph to change its background color.</p>
+<p>Click the button below and then click on this paragraph (the click event is removed).</p>
+
+<button>Remove the click event handler</button>
+
+</body>
+</html>

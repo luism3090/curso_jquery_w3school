@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$(".btn1").on("click",function()
+			{
+				$("p").hide("slow",function()
+				{
+					alert("finish hide method");
+				});
+			});
+
+			$(".btn2").on("click",function()
+			{
+				$("p").show(1000,function()
+				{
+					alert("finish show method");
+				});
+			});
+	
+		});
+	</script>
+	
+</head>
+<body>
+
+
+<p>This is a paragraph.</p>
+
+<button class="btn1">Hide</button>
+<button class="btn2">Show</button>
+
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				$("p:last").removeClass("intro").addClass("main");
+
+				
+			});
+
+			
+		});
+
+	</script>
+
+	<style type="text/css">
+.intro {
+    color: red;
+}
+.main {
+    background-color: yellow;
+}
+	</style>
+
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is another paragraph.</p>
+<p class="intro">This is a paragraph.</p>
+
+<button>Change class name of the last p element</button>
+
+</body>
+</html>
+

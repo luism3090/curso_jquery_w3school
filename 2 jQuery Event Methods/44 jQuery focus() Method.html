@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			$("input").focus(function()
+			{
+				$("span").show().fadeOut(3000);
+			});
+		});
+
+	</script>
+</head>
+<style type="text/css">
+	span
+	{
+		display:none;
+	}
+</style>
+<body>
+
+
+<input>
+
+<span>Can I have you phone number?</span>
+<p>Click in the input field to get focus.</p>
+
+
+</body>
+</html>

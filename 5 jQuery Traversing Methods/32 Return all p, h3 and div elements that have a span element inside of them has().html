@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("p,h3,div").has("span").css("background","yellow");
+
+		});
+
+	</script>
+
+
+</head>
+
+<body>
+
+<h1>Welcome to My Homepage</h1>
+
+<p>A p element with a <span>span</span> element inside of it.</p>
+<p>Another p element with a <span>span</span> element inside of it.</p>
+
+<p>A p element with no span inside.</p>
+
+<h3>A h3 element with a <span>span</span> element inside of it</h3>
+<div>A div element with a <span>span</span> element inside of it</div>
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+	<script type="text/javascript">
+
+
+		$(document).ready(function()
+		{
+			$("div").on("click",function(event)
+			{
+				event.stopPropagation();
+				alert("was event.stopPropagation() called: "+event.isPropagationStopped());
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+
+<div style="height:100px;width:300px;padding:10px;border:1px solid blue;background-color:lightblue;">Click on this div element.</div>
+
+</body>
+</html>

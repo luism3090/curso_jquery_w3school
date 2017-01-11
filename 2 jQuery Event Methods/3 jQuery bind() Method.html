@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+	
+	//Using an event map
+
+		$(function()
+		{
+			$("button").bind
+			({
+		        click:function()
+		        {
+		        	$("p").slideToggle();
+		        },
+		        mouseover:function()
+		        {
+		        	$("body").css("background","pink");
+		        },
+		        mouseout:function()
+		        {
+		        	$("body").css("background","white");
+		        }
+			});
+
+		});
+	</script>
+
+	<style>
+	.intro 
+	{
+	    font-size: 150%;
+	    color: red;
+	}
+	</style>
+
+</head>
+
+<body>
+	
+<p>This is a paragraph.</p>
+
+<button>Click me!</button>
+
+
+</body>
+</html>

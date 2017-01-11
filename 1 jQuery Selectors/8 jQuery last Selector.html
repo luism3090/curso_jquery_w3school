@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+			$(document).on("ready",inicio);
+			function inicio()
+			{
+				$("p:last").css("border","1px solid red");
+				$("#div1 p:last").css("border","1px solid blue");
+
+			}
+		</script>
+	</head>
+	
+	<body>
+
+		<div id='div1'>
+			<p>Este es el primer parrafo</p>
+			<p>Este es el segundo parrafo</p>
+			<p>Este es el tercer parrafo</p>
+		</div>
+		<br/>
+		<div>
+			<p>Este es el primer parrafo</p>
+			<p>Este es el segundo parrafo</p>
+			<p>Este es el tercer parrafo</p>
+		</div>
+
+	</body>
+
+	
+
+</html>

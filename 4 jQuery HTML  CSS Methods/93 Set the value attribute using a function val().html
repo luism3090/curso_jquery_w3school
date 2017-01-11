@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				$("input").val(function(index,value)
+				{
+					return value+" Griffin";
+				});
+
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+
+<p>Name: <input type="text" name="user" value="Peter"></p>
+
+<button>Set the value of the input field</button>
+
+</body>
+</html>
+

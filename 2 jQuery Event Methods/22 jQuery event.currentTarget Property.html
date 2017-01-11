@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	
+	<script type="text/javascript">
+
+	// event.currentTarget is typically equal to this:
+	// Using event.currentTarget.innerHTML to return content of elements.
+
+		$(document).ready(function()
+		{
+			
+			$("h1,p").click(function(event)
+			{
+
+				alert(event.currentTarget.innerHTML);
+
+			});
+
+		});
+
+	</script>
+</head>
+<body>
+
+	<h1>This is a heading</h1>
+
+	<p>This is a paragraph.</p>
+	<p>Click on one of the HTML elements to alert its content.</p>
+
+</body>
+</html>

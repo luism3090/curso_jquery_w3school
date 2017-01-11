@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("#btn1").on("click",function()
+			{
+				
+				var $p1 = $("#p1").detach();
+				$("body").append($p1);
+
+			});
+
+			$("#btn2").on("click",function()
+			{
+			
+				var $p2 = $("#p2").clone();
+				$("body").append($p2);
+				$("#p2").remove();
+
+			});
+
+			$("p").on("click",function()
+			{
+				$(this).animate({"fontSize":"+=3px"});
+			});
+			
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+
+<p id="p1">Click this paragraph after it is moved - it keeps its click event.</p>
+
+<p id="p2">Click this paragraph after it is moved - it does not keeps its click event.</p>
+
+<button id="btn1">Detach and append p element</button>
+<button id="btn2">Remove and append p element</button>
+
+
+</body>
+</html>
+

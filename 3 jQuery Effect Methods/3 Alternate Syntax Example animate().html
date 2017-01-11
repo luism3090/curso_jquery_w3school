@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				$("div").animate({
+									"height":"300px",
+									"width":"300px"
+								},{
+									"duration":5000,
+									"easing":"linear",
+									"complete":function()
+									{
+										alert("animacion completa");
+									}
+								  });
+
+			});
+	
+		});
+	</script>
+	
+</head>
+<body>
+
+<button id="btn">Animate height & width</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
+</body>
+</html>
+

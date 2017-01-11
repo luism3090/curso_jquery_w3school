@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("ul li").toggleClass(function(index)
+				{
+					if(parseInt(index)%2==0)
+					{
+						return "listitem_0";
+					}
+					else
+					{
+						return "listitem_1";
+					}
+				})
+			});
+			 
+			
+		});
+
+	</script>
+<style type="text/css">
+
+.listitem_0 {
+    color: blue;
+} 
+.listitem_1{
+    color: red;
+}
+
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<ul>
+  <li>Peter</li>
+  <li>Lois</li>
+  <li>Chris</li>
+  <li>Stewie</li>
+</ul>
+
+<button>Add/remove classes to list items</button>
+
+
+</body>
+</html>
+

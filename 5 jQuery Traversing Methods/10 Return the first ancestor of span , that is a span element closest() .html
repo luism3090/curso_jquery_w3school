@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+      	$("span").closest("span").css({"border":"1px solid red","color":"red"});
+			
+		});
+
+	</script>
+
+  <style type="text/css" media="screen">
+
+  	.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+  </style>
+</head>
+
+
+<body class="ancestors">body (great-great-grandparent)
+
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent) 
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
+
+<!-- In this example, $("span").closest("span") means that we search for the first ancestor of span that is a span element. Since this method begins with the current element, it will return span. If we use the parents() method instead, nothing will be returned, because the parent element of span is li. --> 
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		//Select each <p> element that is the only <p> element of its parent:
+		$(document).on("ready",function()
+		{
+			
+			$("p:only-of-type").css("background","red");
+
+		});
+		
+
+	</script>
+</head>
+<body>
+	<div style="border:1px solid;">
+	  <p>The first paragraph.</p>
+	  <p>The last paragraph.</p>
+	</div><br>
+
+	<div style="border:1px solid;">
+	  <p>The only paragraph.</p>
+	</div><br>
+
+	<div style="border:1px solid;">
+	  <span>This is a span element.</span>
+	  <p>The only paragraph.</p>
+	</div><br>
+</body>
+</html>

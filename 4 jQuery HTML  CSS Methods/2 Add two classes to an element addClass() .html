@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p:first").addClass("intro note");
+			});
+		});
+
+		
+	</script>
+	<style>
+	.intro 
+	{
+    font-size: 30px;
+    color: blue;
+		}
+		.note {
+		    background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>This is a heading</h1>
+
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+
+	<button>Add two class names to the first p element</button>
+
+</body>
+</html>

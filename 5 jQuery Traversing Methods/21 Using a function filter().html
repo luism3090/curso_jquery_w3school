@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("p").filter(function()
+			{
+				//return $(this).children("span").length==2;
+				return $("span", this).length==2;
+				//return $("span#ultimate", this).length==1;
+
+			}).css("background","yellow");
+			
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+<div>
+  <p>A p element <span>with one span element.</span></p>
+  <p>A p element <span>with</span> two <span>span elements.</span></p>
+  <p>A p element <span>with one span element.</span></p>
+  <p>A p element <span>with</span> two <span>span elements.</span></p>
+  <p>A p element with no span element. <span id="ultimate"> last span</span></p>
+</div>
+
+<p>This example returns all p elements that have two span elements. P elements with none, one, or more than two span elements, will not be returned.</p>
+
+</body>
+</html>
+

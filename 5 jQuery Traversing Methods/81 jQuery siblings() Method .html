@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+       	
+       $(".start").siblings().css({"border":"1px solid red","color":"red"});
+       
+		});
+
+	</script>
+
+<style>
+	.siblings * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+</style>
+</head>
+
+<body>
+
+<div style="width:500px;" class="siblings">
+  <ul>ul (parent)  
+    <li>li (the previous sibling of "start")</li>
+    <li>li (the previous sibling of "start")</li>
+    <li class="start">li (sibling)</li>
+    <li>li (the next sibling of "start")</li>
+    <li>li (the next sibling of "start")</li>
+  </ul>   
+</div>
+
+<p>In this example, we select all elements that are siblings of the li element with class name "start".</p>
+
+</body>
+
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE>
+
+<html lan='es'>
+
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+
+		$(document).on("ready",inicio);
+		
+			/*
+				
+				cache: true o false
+				
+				guarda en la memoria cache del navegador los datos que se retornan de la peticion ajax
+				
+				
+				cache: true 
+				
+				almacena en la memoria cache del navegador los datos que se retornan de la peticion ajax 
+				cuando se carga por primera vez, de esta forma en caso de que fallara la conexion a internet 
+				y se volviera a llamar este mismo ajax los datos ya estan almacenados en cache y ya no hace
+				falta volver hacer la peticion
+				
+				cache: false 
+				
+				No almacena en la memoria cache del navegador los datos que se retornan de la peticion ajax 
+				de esta forma en caso de que fallara la conexion a internet 
+				y se volviera a llamar este mismo ajax ocurre un error y no se realiza la peticion 
+				
+			*/
+		
+		function inicio()
+		{
+			
+			$.ajax
+			({
+				url:"empleados.json",
+				async:true,
+				success:function(result,status,xhr)
+				{
+					alert(result.name);
+				},
+				beforeSend:function(xhr)
+				{
+					alert("preparandose para el envio");
+				},
+				cache:false;
+			});
+			
+		}
+
+		</script>
+	</head>
+
+	
+	<body>
+
+	   
+
+	</body>
+
+
+</html>

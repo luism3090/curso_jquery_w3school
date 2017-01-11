@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			function appendElements()
+			{
+				var text1 = "<p> Text </p>";
+				var text2 = $("<p></p>").text("Text");
+				var text3 = document.createElement("p");
+				text3.innerHTML ="Text";
+
+				$("body").append(text1, text2, text3);
+			}
+
+			$("button").on("click",appendElements);
+
+		});
+	</script>
+	
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<button>Append text</button>
+	
+</body>
+</html>
+

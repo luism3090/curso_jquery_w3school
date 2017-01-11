@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+
+$(document).ready(function()
+{
+	conta = 0;
+	$(window).resize(function()
+	{
+		$("p span").text(conta+=1);
+	});
+
+	$("button").on("click",function()
+	{
+		$(window).resize();
+	});
+
+});
+</script>
+</head>
+<body>
+
+<p>Window resized <span>0</span> times.</p>
+
+<button>Trigger resize event for the window</button>
+
+</body>
+</html>

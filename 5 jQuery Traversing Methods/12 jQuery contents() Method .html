@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+        $("button").on("click",function()
+        {
+          
+          $("div").contents().wrap("<strong></strong>");
+
+          alert($("section").contents("button").html());
+
+        });
+      	
+			
+		});
+
+	</script>
+
+</head>
+<body>
+
+<section>
+
+  <div><em>Hello world! What a beautiful day!</em></div>
+
+  <p>In this example, by clicking on the button, we search for all the text nodes inside the div element and wrap them with a b element.</p>
+
+  <button>Find all text nodes in div and wrap them</button><br>
+
+</section>
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$(".btn1").on("click",function()
+			{
+				
+				$("p").slideUp(1000,function()
+				{
+					alert("slideUp method has finished");
+				});
+				
+			});
+
+			$(".btn2").on("click",function()
+			{
+				$("p").slideDown(1000,function()
+				{
+					alert("slideDown method has finished");
+				});
+			});
+		
+		});
+	</script>
+	
+</head>
+<body>
+
+
+<p>This is a paragraph.</p>
+
+<button class="btn1">Slide up</button>
+<button class="btn2">Slide down</button>
+
+
+</body>
+</html>
+

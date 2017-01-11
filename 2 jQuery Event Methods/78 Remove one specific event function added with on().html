@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		function changeSize()
+		{
+			$(this).animate({fontSize: '+=10px'});
+		}
+		function changeSpacing()
+		{
+			$(this).animate({letterSpacing: '+=5px'});
+		}
+		
+		$("body").on("click","p",changeSize);
+		$("body").on("click","p",changeSpacing);
+
+		$("button").click(function()
+		{
+			$("body").off("click","p",changeSpacing);
+		});
+
+
+	});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to increase size and letterspacing.</p>
+
+<button>Remove the changeSize() event handler</button>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+$(document).ready(function()
+{
+	contador = 0;
+
+	$(window).resize(function()
+	{
+		contador++;
+
+		$("p span").text(contador)
+	});
+
+});
+</script>
+</head>
+<body>
+
+<p>Window resized <span>0</span> times.</p>
+<p>Try resizing your browser window.</p>
+
+</body>
+</html>

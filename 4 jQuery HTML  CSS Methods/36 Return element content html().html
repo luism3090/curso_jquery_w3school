@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				alert($("p").html());
+			});
+
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<button>Return the content of the p element</button>
+
+<p>This is a <b>paragraph</b>.</p>
+
+</body>
+</html>

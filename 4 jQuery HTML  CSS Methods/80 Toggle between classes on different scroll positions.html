@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("div:first").scroll(function()
+			{
+				
+				if($(this).scrollTop() > 100)
+				{
+					$("p:last").css("background","yellow");
+				}
+				else
+				{
+					$("p:last").css("background","");	
+				}
+			});
+			
+		});
+
+	</script>
+
+
+</head>
+<body>
+
+<div id="miDiv" style='width:1000px;height:500px;border:1px solid red;overflow:auto'>
+
+<p>Scroll down this page.</p>
+
+<p style="position:fixed;">When you have scrolled 50 pixels from the top, add the class "test" (yellow background color) to the paragraph. Scroll up again to remove the class.</p>
+
+	<div style="height:1500px;">
+
+
+
+	</div>
+
+</div>
+	
+
+
+
+</body>
+</html>
+

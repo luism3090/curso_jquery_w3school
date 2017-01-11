@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(function()
+		{
+			$("ul + div").css("background","red");
+		});
+
+	</script>
+</head>
+<body>
+	
+<ul>
+  <li>List item</li>
+</ul>
+
+<div>This is a div element that is next to an ul element</div>
+<p>This is a paragraph (not a div)</p>
+<div>This is another div element (will not be selected)</div>
+
+<ul>
+  <li>List item</li>
+</ul>
+
+<div>This is also a div element that is next to an ul element</div>
+<p>This is another paragraph (not a div)</p>
+<div>This is another div element (will not be selected)</div>
+
+
+</body>
+</html>

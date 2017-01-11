@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				$("h1,p").removeClass("head intro main");
+				
+			});
+			
+		});
+
+	</script>
+
+	<style type="text/css">
+.head {
+    font-size: 2em;
+    color: green;
+}
+
+.intro {
+    font-size: 120%;
+    color: red;
+}
+
+.main {
+    font-size: 20px;
+ }
+	</style>
+
+</head>
+<body>
+
+<h1 class="head">This is a heading</h1>
+
+<p class="intro">This is a paragraph.</p>
+<p class="main">This is another paragraph.</p>
+
+<button>Remove the "head", "intro" and "main" class from the selected elements</button>
+
+</body>
+</html>
+

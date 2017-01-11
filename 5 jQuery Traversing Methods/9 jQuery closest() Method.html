@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+      		$("span").closest("ul").css({"border":"1px solid red","color":"red"});
+			
+		});
+
+	</script>
+
+  <style type="text/css" media="screen">
+
+  	.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+  </style>
+</head>
+
+
+<body class="ancestors">body (great-great-grandparent)
+
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (second ancestor - second grandparent) 
+    <ul>ul (first ancestor - first grandparent)
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>
+    </ul>   
+  </div>
+
+<!-- In this example, $("span").closest("ul") means that we search for the first ancestor of span that is an ul element. The CLOSEST ancestor of span is li, but since we are looking for a div, jQuery skips the li element and continue the search for the next ancestor, on and on until it locates our search for ul. If we use the parents() method instead, it will return both ul ancestors. --> 
+
+</body>
+</html>
+

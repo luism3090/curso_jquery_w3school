@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	
+
+	<script type="text/javascript">
+
+
+		$(document).ready(function()
+		{
+			$("div").on("click","button",function(event)
+			{
+				$(event.delegateTarget).css("background","pink");
+			});
+			
+		});
+
+	</script>
+</head>
+<body>
+
+	
+	<div style="background-color:yellow">
+	  <p>Click the button to change the background color of this div.</p>
+	  <button>Click me!</button>
+	</div>
+
+	<div style="background-color:yellow">
+	  <p>Click the button to change the background color of this div.</p>
+	  <button>Click me!</button>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+	<script type="text/javascript">
+
+	/*
+	The delegateTarget and currentTarget are equal for directly bound events
+	Show that delegateTarget and currentTarget are equal for directly bound events.
+	*/
+		$(document).ready(function()
+		{
+			$("button").on("click",function(event)
+			{
+				alert("edelegateTarget return: "+ event.delegateTarget.nodeName+
+					"\n currentTarget return: "+ event.currentTarget.nodeName);
+			});
+			
+		});
+
+	</script>
+</head>
+<body>
+
+<button>Show that delegateTarget and currentTarget are equal for directly bound events</button>
+
+</body>
+</html>

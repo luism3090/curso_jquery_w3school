@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			$("p").on("click",function()
+			{
+				$(this).animate({"fontSize":"+=2px"});
+			});
+			
+			$("button").on("click",function()
+			{
+				 $("button").after($("p:first").clone(true));
+			});	
+
+
+		});
+	</script>
+	
+</head>
+<body>
+
+<p>Click this paragraph to increase text size.</p>
+<p>This is another paragraph.</p>
+
+<button>Copy the first p element (including event handlers), and append to body element</button>
+
+
+</body>
+</html>

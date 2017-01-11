@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				$("#span1").html($(window).height());
+				$("#span2").html($(document).height());
+			});		
+
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<p>The height of this window is <span id="span1">unknown</span> px.</p>
+<p>The height of this document is <span id="span2">unknown</span> px.</p>
+
+<button>Return the height of the window and document elements</button>
+
+</body>
+</html>

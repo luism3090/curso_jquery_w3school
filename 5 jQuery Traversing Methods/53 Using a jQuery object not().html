@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+	
+			$("p").not($("div p.intro")).css("background","yellow");
+
+
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+<div style="border:1px solid black;">
+  This is a div element
+  <h1>Welcome to My Homepage</h1>
+  <p>My name is Donald.</p>
+  <p class="intro">I live in Duckburg (this p element will be removed from the group).</p>
+  <p>My best friend is Mickey.</p>
+</div>
+
+<p class="intro">This p element is outside the div element, and will not be removed.</p>
+<p>This p element is also outside the div element.</p>
+
+</body>
+</html>
+

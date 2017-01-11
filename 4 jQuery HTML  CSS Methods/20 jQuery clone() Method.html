@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").clone().appendTo("body");
+			});
+		});
+	</script>
+	
+</head>
+<body>
+
+
+<p class="p1">This is a paragraph.</p>
+<p class="p2">This is another paragraph.</p>
+
+<button>Clone all p elements, and append them to the body element</button>
+
+
+</body>
+</html>

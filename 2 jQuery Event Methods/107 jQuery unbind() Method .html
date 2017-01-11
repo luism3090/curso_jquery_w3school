@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src='jquery.js'> </script>
+<script>
+
+$(document).ready(function()
+{
+	$("p").on("click",function()
+	{
+		$(this).slideToggle();
+	});
+
+	$("button").click(function()
+	{
+		$("p").unbind("click");
+	});
+});
+
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to make it disappear.</p>
+
+<button>Remove all event handlers for all p elements</button>
+
+</body>
+</html>

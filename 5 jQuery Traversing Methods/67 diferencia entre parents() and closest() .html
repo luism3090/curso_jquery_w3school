@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+       		
+       		$("#span1").parents("div").css({"border":"2px solid red"});
+
+       		$("#span2").closest("div").css({"border":"2px solid red"});
+
+		});
+
+	</script>
+
+
+</head>
+
+<body>
+
+
+<div id="div1" style="border:1px solid;height:280px"> father div1
+
+  <div id="div2" style="border:1px solid;height:200px;margin:20px"> father div2 
+
+  	 <section style="border:1px solid;height:100px;margin:20px;" > father section
+		
+  	 	 <span id='span1' style="border:1px solid;height:30px;margin:30px;display:block" >This is a span element (child of div).</span>
+
+  	 </section>
+
+  </div>
+ 
+
+</div>
+
+
+<br><br>
+
+<div id="div3" style="border:1px solid;height:280px"> father div3
+
+  <div id="div4" style="border:1px solid;height:200px;margin:20px"> father div4
+
+  	 <section style="border:1px solid;height:100px;margin:20px;" > father section
+		
+  	 	 <span id='span2' style="border:1px solid;height:30px;margin:30px;display:block" >This is a span element (child of div).</span>
+
+  	 </section>
+
+  </div>
+ 
+
+</div>
+
+</body>
+
+</html>
+

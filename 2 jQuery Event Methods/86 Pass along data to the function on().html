@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='jquery.js' ></script>
+	<script type="text/javascript" >
+	
+	/*$(function()
+	{
+		alert("");
+	});
+
+	$(document).on("ready",function()
+	{
+		alert("");
+	});
+
+	*/
+
+	$(document).ready(function()
+	{
+		function handlerName(event)
+		{
+			alert(event.data.datos);
+		}
+		
+		$("p").on("click",{datos:'algo'},handlerName);
+
+	});
+
+
+
+
+	</script>
+</head>
+<body>
+	
+<p>Click me!</p>
+
+</body>
+</html>

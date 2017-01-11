@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+		
+			$("p").not(function(c,i)
+			{
+				return $("span",this).length == 2;
+				//return $(this).children("span").length == 2;
+			}).css("background","yellow");
+
+		});
+
+
+
+		
+
+	</script>
+
+</head>
+
+<body>
+
+<div>
+  <p>A p element <span>with one span element.</span></p>
+  <p>A p element <span>with</span> two <span>span elements.</span></p>
+  <p>A p element <span>with one span element.</span></p>
+  <p>A p element <span>with</span> two <span>span elements.</span></p>
+  <p>A p element with no span element.</p>
+</div>
+
+<div>This example returns all p elements that do not have two span elements.</div>
+
+</body>
+</html>
+

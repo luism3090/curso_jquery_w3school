@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			
+			$("#btn1").on("click",function()
+			{
+				$("#p1").fadeToggle(2500);
+			});
+
+			$("#btn2").on("click",function()
+			{
+				$("#p2").fadeToggle("slow","linear");
+			});
+
+			$("#btn3").on("click",function()
+			{
+				$("#p3").fadeToggle("fast");
+			});
+			
+	
+		});
+	</script>
+	
+</head>
+<body>
+
+<button id="btn1">fadeToggle() milliseconds</button>
+<button id="btn2">fadeToggle() slow</button>
+<button id="btn3">fadeToggle() fast</button>
+
+<p id="p1">This is a paragraph that takes 2500 milliseconds to fade out and in.</p>
+<p id="p2">This is a slow, linear paragraph.</p>
+<p id="p3">This is a fast paragraph.</p>
+
+
+
+</body>
+</html>
+

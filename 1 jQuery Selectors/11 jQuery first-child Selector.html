@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lan='es'>
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+		
+		// The :first-child selector selects all elements that are the first child of their parent.
+
+			$(function()
+			{
+				// Select every <p> element that is the first child of its parent:
+				
+				$("p:first-child").css("border","1px solid red");
+
+				$("span:first-child").css("background","yellow");
+
+				//$("#div2 p:first").css("background","red");
+
+			});
+		</script>
+	</head>
+	<body>
+
+		<p>The first paragraph in body.</p>
+
+		<div style="border:1px solid;" id='div1'>
+			<p>The first paragraph in div.</p>
+			<p>The last paragraph in div.</p>
+		</div>
+
+		<br>
+
+		<div style="border:1px solid;" id='div2'>
+			<span>This is a span element.</span>
+			<p>The first paragraph in another div.</p>
+			<span>This is a span element.</span>
+			<p>The last paragraph in another div.</p>
+			<span>This is a span element.</span>
+		</div>
+
+		<br>
+
+		<section style="border:1px solid;">
+			<p>The first paragraph in a section.</p>
+			<div>The first div in a section.</div>
+			<p>The last paragraph in a section.</p>
+		</section>
+
+		<p>The last paragraph in body.</p>
+
+	</body>
+</html>

@@ -1,0 +1,10 @@
+checar el funcionamiento del archivo 
+
+91 Jquery $.proxy Method  $(selector).proxy(context,name) 
+
+ya que necesitaba saber crear objetos y ver el fucionamiento del prototype de javascript para poder entenderlo
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("div").empty();
+			});
+
+		});
+
+	</script>
+	
+</head>
+<body>
+
+<div style="height:100px;background-color:yellow">
+  This is some text
+  <p>This is a paragraph inside the div.</p>
+</div>
+
+<p>This is a paragraph outside the div.</p>
+
+<button>Remove content of the div element</button>
+
+</body>
+</html>

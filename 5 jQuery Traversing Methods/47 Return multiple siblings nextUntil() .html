@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+            $("h2").nextUntil("h5",".first,.second,.third").css({"border":"1px solid red","color":"red"});
+
+		});
+
+	</script>
+
+<style>
+.siblings * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div style="width:500px;" class="siblings">
+  <div>parent
+    <p>p</p>
+    <span>span</span>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <p>p</p>
+    <p class="first">p class "first"</p>
+    <p>p</p>
+    <span class="second">span class "second"</span>
+    <span class="second">span also class "second"</span>
+    <span>span</span>
+    <h3 class="third">h3 class "third"</h3>
+    <h5>h5</h5>
+   </div>
+</div>
+
+<p>In this example, we return all elements with class names "first", "second" and "third", that are the next sibling elements between h2 and h5.</p>
+
+
+</body>
+</html>
+

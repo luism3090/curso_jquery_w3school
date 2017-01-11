@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$("button").click(function()
+		{
+			$("p").slideToggle();
+		});
+
+		$("div").mouseover(function()
+		{
+			$("button").click();
+		});
+	});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+
+<button>Toggle</button><br><br>
+
+<div>Mouse over this text to trigger the mousedown event for the button above.</div>
+
+
+</body>
+</html>

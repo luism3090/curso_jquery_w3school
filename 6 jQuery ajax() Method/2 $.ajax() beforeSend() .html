@@ -1,0 +1,63 @@
+<!DOCTYPE>
+
+<html lan='es'>
+
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+
+		$(document).on("ready",inicio);
+		
+		/*
+		
+		beforeSend(xhr)
+		
+			xhr.readyState:  
+			
+			muestra el estado de la peticion ajax en forma de digito . valores de 0 a 4: 
+			
+			0: peticion no inicializada
+			1: conexion de servidor establecida
+			2: peticion recibida
+			3: procesando peticion  
+			4: peticion finalizada y respuesta lista para su uso
+			
+			en el caso de success la peticion devolvera el objeto xhr.readyState = 0
+		*/
+		
+		function inicio()
+		{
+			
+			$.ajax
+			({
+				url:"empleados.json",
+				async:true,
+				success:function(result,status,xhr)
+				{
+					alert(result.name);
+				},
+				beforeSend:function(xhr)
+				{
+					
+					console.log(xhr.readyState);
+					
+					alert("Preparándose para ser enviado");
+				}
+				
+			});
+			
+		}
+
+		</script>
+	</head>
+
+	
+	<body>
+
+	   
+
+	</body>
+
+
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").toggleClass("main");
+			});
+			 
+			
+		});
+
+	</script>
+<style type="text/css">
+	.main {
+    font-size: 120%;
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<button>Toggle class "main" for p elements</button>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p><b>Note:</b> Click the button more than once to see the toggle effect.</p>
+
+</body>
+</html>
+

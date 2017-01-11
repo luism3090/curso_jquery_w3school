@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+	<script type="text/javascript">
+
+	/*
+	Remove a custom namespace for a particular click event
+	Remove a custom namespace for a particular click event, without removing any other click event handlers.
+	*/
+
+		$(document).ready(function()
+		{
+			$("p").on("click.algo",function(event)
+			{
+				$(this).slideToggle();
+			});
+
+			$("button").on("click",function(event)
+			{
+				$("p").off("click.algo");
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click any p element to make it disappear.</p>
+
+<button>Remove the click.mySomething namespace for all p elements</button>
+<br><br>
+
+<div>"click.mySomething" defines the mySomething namespace for this particular click event. This event could be removed by using .off("click.mySomething"), without removing other click handlers attached to the specified element. </div>
+
+</body>
+</html>

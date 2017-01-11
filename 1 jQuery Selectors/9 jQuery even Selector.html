@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		
+		<script type="text/javascript">
+
+		/*
+
+		El :even 
+		selector selecciona cada elemento con un número de índice incluso (como: 0, 2, 4, etc.).
+
+		Los números índices comienzan en 0.
+
+		Esto se utiliza sobre todo junto con otro selector para seleccionar cada elemento incluso indexada en un grupo (como en el ejemplo anterior).
+
+		*/
+
+
+		//Seleccionar todos los demás (incluso) <tr> elemento:
+
+		$(document).on("ready",inicio);
+		function inicio()
+		{
+			$("#div1 div:even").css("background","red");
+			$("#div2 div:even").css("background","blue");
+
+			$("#lista1 li:even").css("background","green");
+			$("#lista2 li:even").css("background","yellow");
+
+			$("table tbody tr:even").css("background","pink");
+			
+			
+		
+			
+			
+			
+			
+			
+			
+		}
+
+		
+
+		</script>
+
+	</head>
+
+	<body>
+		
+		<h1> Welcome to my web page</h1>
+		
+		<div id="div1">
+			<div>div numero 0</div>
+			<div>div numero 1</div>
+			<div>div numero 2</div>
+			<div>div numero 3</div>
+			<div>div numero 4</div>
+			<div>div numero 5</div>
+		</div>
+		<br>
+		<div id="div2">
+			<div>div numero 0</div>
+			<div>div numero 1</div>
+			<div>div numero 2</div>
+			<div>div numero 3</div>
+			<div>div numero 4</div>
+			<div>div numero 5</div>
+		</div>
+		<br>
+		<ul id="lista1">
+			<li>li numero 1</li>
+			<li>li numero 2</li>
+			<li>li numero 3</li>
+			<li>li numero 4</li>
+			<li>li numero 5</li>
+			<li>li numero 6</li>
+		</ul>
+		<br>
+		<ul id="lista2">
+			<li>li numero 1</li>
+			<li>li numero 2</li>
+			<li>li numero 3</li>
+			<li>li numero 4</li>
+			<li>li numero 5</li>
+			<li>li numero 6</li>
+		</ul>
+	<br>
+	<table border="1" id="tabla1">
+		<thead>
+			<th>company</th>
+			<th>country</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Germany</td>
+			</tr>
+			<tr>
+				<td>Berglunds snabbköp</td>
+				<td>Sweden</td>
+			</tr>
+			<tr>
+				<td>Centro comercial Moctezuma</td>
+				<td>Mexico</td>
+			</tr>
+			<tr>
+				<td>Ernst Handel</td>
+				<td>Austria</td>
+			</tr>
+			<tr>
+				<td>Island Trading</td>
+				<td>UK</td>
+			</tr>
+		</tbody>
+	</table>
+
+	</body>
+
+</html>

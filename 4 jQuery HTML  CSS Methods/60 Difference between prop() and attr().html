@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				$("#p1").html("<div> attr('checked'): "+ $("#check1").attr("checked")+" </div>"+
+							  "<div> prop('checked'): "+ $("#check1").prop("checked")+" </div>");
+
+			});
+			
+		});
+
+	</script>
+	
+</head>
+<body>
+
+
+<p><b>Note:</b> Check and uncheck the checkbox and then click the button to refresh content.</p>
+<button>Check value of attr() and prop()</button>
+<br><br>
+
+<input id="check1" type="checkbox" checked="checked">
+<label for="check1">Check me</label>
+<p id="p1"></p>
+
+</body>
+</html>
+

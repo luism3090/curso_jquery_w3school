@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				alert("width: "+$("img").attr("width"));
+			});
+		});
+	</script>
+	
+</head>
+<body>
+
+<img src="imagenes/joven1.jpg" alt="Pulpit Rock" width="284" height="213"><br>
+
+<button>Return the width of the image</button>
+
+</body>
+</html>

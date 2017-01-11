@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				$("p").wrap(function()
+				{
+					return "<div></div>";
+				});
+				
+			});
+
+		});
+
+	</script>
+
+<style>
+div {
+    background-color: yellow;
+    padding: 10px;
+}
+</style>
+
+</head>
+<body>
+
+
+
+<p>This is a paragraph.</p>
+
+<button>Wrap a div element around the p element</button>
+
+
+</body>
+</html>
+

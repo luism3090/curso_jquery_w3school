@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			var contador=0;
+			
+			$("p").keypress(function()
+			{
+				contador++;
+				$("span").text(contador)
+			});
+
+			$("button").click(function()
+			{
+				$("p").keypress();
+			});
+
+		});
+
+	</script>
+</head>
+
+<body>
+
+<p>Keypresses: <span>0</span></p>
+
+<button>Trigger the keypress event</button>
+
+</body>
+</html>
+
+

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+
+				$("<h2>Hola mundo</h2>").replaceAll("p");
+	
+			});
+			
+		});
+
+	</script>
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+<body>
+
+<button>Replace all p elements with h2 elements</button><br>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			$("button").click(function(event)
+			{
+				
+				$("p:eq(0) span").html(event.timeStamp);
+
+				$("p:eq(1) span").html((parseInt(event.timeStamp)/1000));
+
+				$("p:eq(2) span").html((parseInt(event.timeStamp)/1000)/60);
+
+				$("p:eq(3) span").html(((parseInt(event.timeStamp)/1000)/60)/60);
+
+			});
+		});
+
+	</script>
+</head>
+<body>
+
+	<p>The click event occurred <span style="color:red">unknown</span> milliseconds after January 1, 1970.</p>
+
+	<p>The click event occurred <span style="color:red">unknown</span> seconds after January 1, 1970.</p>
+
+	<p>The click event occurred <span style="color:red">unknown</span> minutes after January 1, 1970.</p>
+
+	<p>The click event occurred <span style="color:red">unknown</span> hours after January 1, 1970.</p>
+
+	<button>Click me</button>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lan='es'>
+
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+
+		//Select the first <p> element:
+
+		
+		$(document).on("ready",inicio);
+		
+		function inicio()
+		{
+			$("p:first").css("border","1px solid red");
+
+			$("#div2 p:first").css("border","1px solid blue");
+
+			
+ 
+		}
+
+
+		</script>
+	</head>
+
+	<body>
+
+		<div id="div1">
+			<span>soy un span</span>
+			<p>Primer parrafo</p>
+			<p>Segundo parrafo</p>
+			<p>Tercer parrafo</p>
+		</div>
+		<br/>
+		<div id="div2">
+			<p>Primer parrafo</p>
+			<p>Segundo parrafo</p>
+			<p>Tercer parrafo</p>
+		</div>
+
+	</body>
+
+
+</html>

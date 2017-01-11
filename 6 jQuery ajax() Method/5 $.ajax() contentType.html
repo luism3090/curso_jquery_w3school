@@ -1,0 +1,91 @@
+<!DOCTYPE>
+
+<html lan='es'>
+
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+
+		$(document).on("ready",inicio);
+		
+		/*
+		
+		http://localhost/ajax/5%20$.ajax()%20contentType.html
+		
+		
+		https://www.w3.org/TR/html401/interact/forms.html#h-17.13.4
+		
+		http://api.jquery.com/jquery.ajax/
+		
+		http://stackoverflow.com/questions/23857707/why-is-my-ajax-request-sending-content-type-application-x-www-form-urlencoded
+		
+		http://stackoverflow.com/questions/4007969/application-x-www-form-urlencoded-or-multipart-form-data
+		
+		
+			contentType : 
+			
+			especifica el tipo de contenido utilizado para codificar los datos que seran enviados del ajax
+			para su presentación al servidor los cuales pueden ser :
+			
+			1.- "application/x-www-form-urlencoded; charset=UTF-8"           (por default)
+			
+			
+			Este es el tipo de contenido (por default). Los formularios enviados con este tipo de 
+			contenido son codificados por ejemplo :
+			
+			
+			
+			2.- "aplication/json; charset=utf-8"
+			
+			
+			3.- "true o false"
+			
+		*/
+		
+		function inicio()
+		{
+			
+			$.ajax(
+			{	
+				type:"get",
+				url:'5 $.ajax() contentype .php',
+				async:true,
+				cache:true,
+				beforeSend: function()
+				{
+					//alert("preparandose para enviar");
+				},
+				success: function(result,status,xhr)
+				{
+					//debugger;
+					//alert(result);
+				},
+				complete: function(result,status)
+				{
+					alert("peticion completada");
+				},
+				//contentType: "aplication/json; charset=utf-8",
+				//contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+				contentType:false,
+				data:{dato:"Hola"}
+			});
+			
+		}
+		
+		
+		
+
+
+		</script>
+	</head>
+
+	
+	<body>
+
+	   
+
+	</body>
+
+
+</html>

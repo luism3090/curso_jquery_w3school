@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src='jquery.js'></script>
+		<script type="text/javascript">
+			
+			//Select every <p> element that is the last <p> element of its parent:
+
+			$(function()
+			{
+				$("p:last-of-type").css("background-color","red");
+			});
+
+		</script>
+	</head>
+	<body>
+
+		<p>The first paragraph in body.</p>
+
+		<div style="border:1px solid;">
+		  <p>The first paragraph in div.</p>
+		  <p>The last paragraph in div.</p>
+		</div><br>
+
+		<div style="border:1px solid;">
+		  <p>The first paragraph in another div.</p>
+		  <p>The last paragraph in another div.</p>
+		  <span>This is a span element.</span>
+		</div>
+
+		
+
+		<p>The last paragraph in body.</p>
+
+		
+
+	</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("button").on("click",function()
+			{
+				$("p").unwrap();
+
+			});
+
+		});
+
+	</script>
+<style type="text/css">
+
+div{background-color: yellow;}
+article{background-color: pink;}
+
+</style>
+</head>
+<body>
+
+
+<div>
+  <p>This is a paragraph inside a div element.</p>
+</div>
+
+<article>
+  <p>This is a paragraph inside an article element.</p>
+</article>
+
+<button>Remove the parent element of each p element</button>
+
+
+</body>
+</html>
+

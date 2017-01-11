@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+	// $(selector).delegate(childSelector,event,data,function)
+
+		$(document).ready(function()
+		{
+			$("div").delegate("p","click",function()
+			{
+				$("p").css("background-color","pink");
+			});
+
+		});
+	</script>
+</head>
+<body>
+
+	<div style="background-color:yellow;">
+	  <p>This is a paragraph inside a div element.</p>
+	</div>
+
+	<p>This is a paragraph.</p>
+
+</body>
+</html>

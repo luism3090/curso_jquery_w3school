@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("button").on("click",function()
+			{
+				
+				$("#span1").text($(window).width());
+				$("#span2").text($(document).width());
+
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+<p>The width of this window is <span id="span1">unknown</span> px.</p>
+<p>The width of this document is <span id="span2">unknown</span> px.</p>
+
+<button>Return the width of the window and document elements</button>
+
+</body>
+</html>
+

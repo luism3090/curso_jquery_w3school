@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			$("#add").on("click",function()
+			{
+				$("p").toggleClass("main",true);
+
+			});
+
+			$("#remove").on("click",function()
+			{
+				$("p").toggleClass("main",false);
+
+			});
+			 
+			
+		});
+
+	</script>
+<style type="text/css">
+
+.main {
+    font-size: 120%;
+    color: red;
+}
+
+</style>
+</head>
+<body>
+
+
+<p>This is a paragraph.</p>
+<p class="main">This is another paragraph.</p>
+
+<button id="add">Add class "main"</button>
+<button id="remove">Remove class "main"</button>
+
+
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<script type="text/javascript">
+
+	//Attach multiple events
+	
+		$(function()
+		{
+			
+			$("p").bind("mouseover mouseout",function()
+			{
+				$("p").toggleClass("intro");
+			});
+
+		});
+	</script>
+
+	<style>
+	.intro 
+	{
+	    font-size: 150%;
+	    color: red;
+	}
+	</style>
+
+</head>
+
+<body>
+	
+
+<p>Hover the mouse pointer over this paragraph.</p>
+
+
+</body>
+</html>

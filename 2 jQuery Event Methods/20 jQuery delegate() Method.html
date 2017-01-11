@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+	// $(selector).delegate(childSelector,event,data,function)
+
+		function handlerName(e)
+		{
+			alert(e.data.msg);
+		}
+
+		$(document).ready(function()
+		{
+			$("p").delegate({msg:"you just clicked me"}, "click", handlerName);
+
+		});
+	</script>
+</head>
+<body>
+
+<p>Click me!</p>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+
+	<script type="text/javascript">
+
+/*
+Difference between delegateTarget and currentTarget with delegation
+Show the difference between delegateTarget and currentTarget when delegation occurs.
+*/
+
+		$(document).ready(function()
+		{
+			$("body").on("click","button",function(event)
+			{
+				alert("edelegateTarget return: "+ event.delegateTarget.nodeName+
+					"\n currentTarget return: "+ event.currentTarget.nodeName);
+			});
+			
+		});
+
+	</script>
+</head>
+<body>
+
+<button>Show the difference between delegateTarget and currentTarget when delegation occurs</button>
+
+
+</body>
+</html>

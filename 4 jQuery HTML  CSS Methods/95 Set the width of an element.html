@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+
+		$(document).on("ready",function()
+		{
+			
+			$("#btn1").on("click",function()
+			{
+				$("div").width("500px");
+			
+			});
+
+			$("#btn2").on("click",function()
+			{
+				$("div").width("10em");
+			
+			});
+
+			$("#btn3").on("click",function()
+			{
+				$("div").width("300pt");
+			
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+<button id="btn1">Set width of div to 500px</button>
+<button id="btn2">Set width of div to 10em</button>
+<button id="btn3">Set width of div to 300pt</button>
+
+<p><b>Note:</b> Use "" for em, pt, etc.</p>
+
+<div style="height:100px;width:300px;border:1px solid blue;background-color:lightblue;"></div><br>
+
+</body>
+</html>
+
